@@ -1,0 +1,637 @@
+@import url('https://fonts.googleapis.com/css2?family=Coda&family=Coda+Caption:wght@800&family=Dosis:wght@400;600&family=Lato:ital,wght@0,400;1,700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration:none;
+}
+img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+.contain{
+    min-height: 100vh;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+/* start of nav-bar */
+
+/* #head{
+    position: fixed; 
+    z-index: 1000;
+    left:0;
+    top:0;
+    width:100vw;
+    height:auto;
+}
+#head .head{
+    min-height: 8vh;
+    background-color: rgba(31,30,30,0.24);
+}
+.head .nav-bar{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  width:100%;
+  height:100%;
+  max-width:1300px;
+  padding:0 10px;
+} */
+
+nav{
+    min-height: 8vh;
+    background-color: rgba(31,230,90,0.24);
+}
+.navbar-brand{
+   margin:0 10px;
+}
+.nav-item a{
+    color:black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* start of hero */
+#hero{
+    background-image: url(https://images.unsplash.com/photo-1601342631279-43334c219bdc?ixid=MXwxMjA3fDB8MHx0b3BpYy1mZWVkfDE2M3xhZXU2ckwtajZld3x8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60://images.unsplash.com/photo-1593642634367-d91a135587b5?ixid=MXwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwzNnx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=900&q=60);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:yellow;
+    background-position:top center;
+    position:relative;
+    overflow: hidden;
+}
+.hero .cta{
+    border:2px rgb(146, 140, 131) solid;
+    color:blue;
+    display:inline-block;
+    padding:10px 30px;
+    transition: .3s ease;
+    font-size: 2rem;
+    transition-property:color,background-color;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    margin-top: 20px;
+}
+.hero .cta:hover{
+    color:orange;
+    background-color:black;
+    text-decoration: none;
+}
+#hero h1{
+    width:fit-content;
+    display: block;
+    font-size:4rem;
+    position:relative;
+    color:transparent;
+    animation:gun 0.5s ease forwards;
+    animation-delay: 1s;
+}
+#hero .hero{
+   padding: 0px  50px;
+   margin:0px auto;
+    justify-content:flex-start;
+}
+#hero h1 span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width:0;
+    background-color:red;
+    animation:fun 1s ease-in;
+}
+#hero h1:nth-of-type(1){
+    animation-delay: 1.2s;
+}
+#hero h1:nth-of-type(2){
+    animation-delay: 2s;
+}
+#hero h1:nth-of-type(3){
+    animation:rev 0.5s forwards;
+    animation-delay: 3s;
+}
+#hero h1:nth-of-type(1) span{
+    animation-delay: 0.7s;
+}
+#hero h1:nth-of-type(2) span{
+    animation-delay: 1.56s;
+}
+#hero h1:nth-of-type(3) span{
+    animation-delay: 2.4s;
+}
+
+/*end of hero section */
+/*key begin*/
+
+/* service section*/
+
+#services .service-title{
+    font-size: 3rem;
+    font-weight:lighter;
+   text-transform: uppercase;
+   letter-spacing: 0.5rem;
+   text-align: center;
+   margin-bottom: 15px;
+   margin-top: 10px;
+}
+#services .service-top p{
+   font-size:1rem;
+   margin-top: 5px;
+   font-weight: 300;
+   text-align:center;
+   font-family:Arial, Helvetica, sans-serif;
+   margin-bottom: 30px;
+}
+#services .services{
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin:0 auto;
+    overflow: hidden;
+    padding:100px 0;
+}
+#services .service-bottom{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#services .service-item{
+    flex-basis:40%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    border-radius: 10px;
+    background-image: url('https://img.freepik.com/free-photo/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg?size=626&ext=jpg');
+    background-size: cover;
+    margin:10px 5%;
+}
+
+#services .service-bottom .icon{
+    height:80px;
+    width:80px;
+    margin-bottom: 20px;
+}
+#services .service-bottom h2{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#services .service-bottom p{
+    text-transform: uppercase;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* end of service section*/
+
+/* project section */
+#project .project{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin:0 auto;
+    overflow: hidden;
+    padding:100px 0px;
+}
+    
+#project .project-header{
+    font-size:3rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+#project .project-top{
+    margin-bottom: 100px;
+}
+#project .project-bottom{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+#project .project-item{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+    width:80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius:25px;
+}
+#project .project-info{
+    background-image: url('https://img.freepik.com/free-photo/back-school-education-banner-background_8087-1192.jpg?size=626&ext=jpg');
+    background-size: cover;
+    background-position: center;
+    padding:30px;
+    flex-basis:100%;
+    width:80%;
+    align-items:flex-start;
+    z-index: -1;
+}
+#project .project-info h1{
+    font-size: 3rem;
+    font-weight: 500;
+    text-align: center;
+    color:skyblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#project .project-info h2{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:peru;
+}
+#project .project-info p{
+    margin-top: 10px;
+    font-weight: 500;
+    color:whitesmoke;
+    font-family:'Courier New', Courier, monospace;
+}
+
+
+
+/* end of project section */
+/* start of about me */
+
+
+#about .about{
+    flex-direction: column-reverse;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin:0 auto;
+    max-width: 1200px;
+    padding:100px 20px;
+    overflow: hidden;
+}
+#about .col-left{
+    width: 250px;
+    height: 360px;
+}
+#about .col-right{
+    width: 100%;
+}
+
+#about .col-left .about-img{
+    position:relative;
+    height: 100%;
+    width: 100%;
+    border:7px white solid;
+    margin-top: 25px;
+}
+#about .col-left .about-img::after{
+    content:'';
+    position:absolute;
+    left:-32px;
+    top:22px;
+    height:98%;
+    width: 98%;
+    border: 7px red solid;
+    z-index: -1;
+}
+#about .col-right h1{
+    margin-top:10px;
+    font-weight:300;
+    font-size:3rem;
+    text-transform: uppercase;
+}
+#about .col-right h3{
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-bottom:20px;
+    font-family:monospace;
+    text-transform: uppercase;
+    color:blueviolet;
+    width:fit-content;
+    display:inline-block;
+    background:transparent;
+    position:relative;
+    color:transparent;
+}
+#about .col-right h3:hover{
+    animation:gun 0.5s ease forwards;
+    animation-delay: 1s;
+}
+#about .col-right p{
+    font-size: 1rem;
+    font-weight:100;
+    margin-bottom:40px;
+    color:cadetblue;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#about .cta{
+    letter-spacing:1rem;
+    font-weight:500;
+    font-size: 2rem;
+    border:2px solid chocolate;
+    text-transform: uppercase;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding:10px 25px;
+}
+#about .cta:hover{
+    color:orange;
+    background:black;
+}
+
+
+
+/* end of About*/
+
+
+/* start of Contact */
+
+#contact .contact{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+#contact .contact-all{
+    max-width:1200px;
+    min-height: 100vh;
+}
+#contact .header h1{
+   text-transform: uppercase;
+   color:goldenrod;
+   font-weight: 500;
+   font-size:2.4rem;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   letter-spacing:1rem;
+   margin-top:35px;
+   margin-bottom:20px;
+}
+#contact .contact-box{
+    border-radius:30px;
+    margin:30px;
+    padding:30px 120px;
+    align-items:center;
+   justify-content: center;
+   flex-direction: column;
+   box-shadow:0px 0px 18px 0px #0000001c;
+} 
+#contact .contact-box:hover{
+   box-shadow:0px 0px 5px 0px #0000001c;
+} 
+#contact .contact-box .icon img{
+   height:80px;
+   width:80px;
+   display: relative;
+   margin-bottom: 10px;
+}
+#contact .contact-box h1{
+    color:cornflowerblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom:10px;
+}
+#contact .contact-box p{
+    color:teal;
+    font-weight: 500;
+}
+
+
+
+/* end of contact */
+
+/* start of footer */
+/* .txt{
+    margin:0px 50px;
+    align-items: center;
+    justify-content: center;
+    border:50px,transparent,solid;
+}
+.txt h1{
+  color:black;
+  font-size:20px;
+  font-family:'Segoe UI';
+  font-weight: 500;
+  text-align:left;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.txt p{
+    color:whitesmoke;
+    font-family: sans-serif;
+    width:40%;
+}
+#footer{
+    background-image:linear-gradient(60deg,blue 0%,violet 100%);
+    padding-top:0px;
+    padding-bottom:10px;
+    max-width:fit-content;
+    max-height:200vh;
+    width:max-content;
+    overflow: hidden;
+}
+#footer .header{
+    flex-direction:column;
+    flex-shrink: 40%;
+}
+#footer .inp{
+   margin:35px 0px 35px;
+   position:relative;
+}
+#footer .inp input{
+    width:100px;
+    font-family: 'Lucida Sans';
+    font-weight: 500;
+    font-size:17px;
+    margin-left:10px;
+    padding-bottom:2px;
+}
+#footer .footer-bottom{
+    border:10px transparent solid;
+    text-align: left;
+    padding-bottom:105px;
+    padding-left:250px;
+}
+#footer .header img{
+    height:40px;
+   width:40px;
+}
+#footer .infos{
+    display:flex;
+    margin-left:75px;
+}
+#footer .footer-bottom{
+    margin-bottom:50px;
+}
+#footer .info{
+    margin-right:30px;
+}
+#footer .bottom{
+    padding-bottom:210px;
+    padding-right:180px;
+}
+#footer .txt1 h1{
+    text-transform: uppercase;
+    font-size:20px;
+    font-weight: 500;
+    font-family:'Segoe UI';
+}
+#footer .bottom-first{
+    text-align: center;
+    color: chartreuse;
+}
+#footer .lol{
+    flex-direction:column;
+}
+#footer .bottom-second p{
+ color:white;
+}
+#footer .bottom-second{
+    display:flex;
+    flex-direction: row;
+}
+
+ */
+
+ footer{
+    position: relative;
+    bottom: 0;
+    max-width:1800px;
+    background-image: linear-gradient(210deg,pink,purple);
+ }
+ .main-content{
+     display: flex;
+ }
+ .main-content .box{
+     flex-basis: 50%;
+     padding:10px 20px;
+ }
+.box h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+}
+.left h2{
+    font-size:3rem;
+    font-weight:900;
+    font-family:'poppins';
+    text-transform: uppercase;
+}
+.box .content{
+    margin:20px 0 0 0;
+}
+.box .content p{
+    font-size: 1.4rem;
+    color:blue
+}
+.left .content .ico{
+    margin:20px 0 0 0;
+}
+.left .content .ico a{
+    padding:0 2px;
+}
+.left .content .ico a span{
+    height:30px;
+    width: 30px;
+    background-color:black;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition:1s;
+}
+.left .content .ico a span:hover{
+   background-color:palegreen;
+}
+.left .content span{
+ color:goldenrod;
+ margin: 3px 3px;
+}
+.left .content s{
+    color:goldenrod;
+   }
+.mid .text{
+    color:azure;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* end of footer */
+
+
+
+/* keyframe section */
+/* hero */
+@keyframes gun{
+ 100%{
+     color:olivedrab;
+ }
+}
+@keyframes rev{
+ 100%{
+     color:navy;
+ }
+}
+@keyframes fun{
+    50%{
+       width:100%;
+       left:0;
+    }
+    100%{
+        width:0%;
+      left:100%;
+    }
+}
+/* hero */
+/* projects */
+
+
+/* end of projects */
+/*key end*/
+
+
+
+@media only screen and (min-width:769px){
+    #services .service-bottom .service-item{
+        flex-basis:45%;
+        margin:2.5%;
+    }
+}
